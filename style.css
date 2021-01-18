@@ -1,0 +1,52 @@
+/* *, ::before, ::after {
+    box-sizing: inherit;
+} */
+
+.hebergement-marseille {
+  background: #f1f1f1;
+  border-radius: 3%;
+  width: 60%;
+  height: auto;
+  margin: 0;
+  padding: 50;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  grid-gap: 10px;
+}
+
+.hebergement-marseille img {
+  width: 90%;
+  height: auto;
+  border-radius: 10%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+}
+
+.photo1 {
+  background-color: rgb(250, 250, 250);
+  border-radius: 10%;
+  width: 90%;
+  height: auto;
+  margin: 10px;
+  padding: 0;
+}
+
+.fontSize10 {
+  font-size: 20px;
+}
+.fontWidthBold {
+  font-weight: bold;
+}
+.marginBottum5Left10 {
+  margin: 0px 0 5px 30px;
+}
+
+/* explication concernant 
+display : flex;
+justify-content: center; alignement par rapport aux axe des X
+align-items: center; alignement par rapport aux axe des y 
+remarque si on applique ça sur le body il faut lui donner une hauteur car le body ne l'a pas
+height: 100vh */
