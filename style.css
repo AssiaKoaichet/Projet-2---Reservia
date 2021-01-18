@@ -3,9 +3,9 @@
 } */
 
 .hebergement-marseille {
-  background: #f1f1f1;
+  background: silver;
   border-radius: 3%;
-  width: 60%;
+  width: 70%;
   height: auto;
   margin: 0;
   padding: 50;
@@ -23,26 +23,84 @@
   margin-left: auto;
   margin-right: auto;
   margin-top: 10px;
+
 }
 
-.photo1 {
-  background-color: rgb(250, 250, 250);
+.photoSection1 {
+  background-color: white;
   border-radius: 10%;
   width: 90%;
   height: auto;
   margin: 10px;
   padding: 0;
+
+  
 }
 
+ .img1{
+  width:auto ;
+  height: 160px;
+  overflow :hidden;
+ }                  
+
 .fontSize10 {
-  font-size: 20px;
+  font-size: 15px;
 }
 .fontWidthBold {
   font-weight: bold;
 }
 .marginBottum5Left10 {
-  margin: 0px 0 5px 30px;
+  margin: 0px 0 5px 10px;
+  
 }
+
+/* section plus-populaire */
+
+.plus-populaires{
+  background: silver;
+  border-radius: 10%;
+  width: 50%;
+  height: auto;
+  margin: 0;
+  padding: 50;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+
+  /* grid-gap: 10px; */
+  }
+
+  .img2{
+    width:auto ;
+    height: 160px;
+    overflow :hidden;
+   }    
+   .plus-populaires img{
+     width:   300px;
+     height: auto;
+   }
+   .photoSection2 {
+    background-color: white;
+    border-radius: 10%;
+    width: 50%;
+    height: auto;
+    margin: 10px;
+    padding: 0;
+    display: flex;
+    white-space: break-spaces;
+  
+    
+  }
+  .plus-populaires img {
+    width: 90%;
+    height: auto;
+    border-radius: 10% 0 0 10%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+
+
+
 
 /* explication concernant 
 display : flex;
