@@ -1,7 +1,9 @@
 /* *, ::before, ::after {
     box-sizing: inherit;
 } */
-
+body{
+  font-family: 'Raleway', sans-serif;
+}
 .hebergement-marseille {
   background: silver;
   border-radius: 3%;
@@ -54,51 +56,87 @@
   
 }
 
-/* section plus-populaire */
+/* section2 plus-populaire */
 
 .plus-populaires{
   background: silver;
   border-radius: 10%;
   width: 50%;
   height: auto;
-  margin: 0;
-  padding: 50;
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
+  padding: 5px;
 
-  /* grid-gap: 10px; */
+  
   }
 
-  .img2{
-    width:auto ;
-    height: 160px;
-    overflow :hidden;
-   }    
-   .plus-populaires img{
-     width:   300px;
-     height: auto;
-   }
-   .photoSection2 {
+  .photoSection2 {
     background-color: white;
     border-radius: 10%;
-    width: 50%;
+    width: 90%;
     height: auto;
-    margin: 10px;
-    padding: 0;
+    margin: 10px ;
+    padding: 10px;
     display: flex;
+    /* justify-content: center;
+    justify-items: center; */
     white-space: break-spaces;
   
     
   }
+
+  .img2{
+    width: auto ;
+    height: 150px;
+    overflow :hidden;
+    display: flex;
+    overflow: visible;
+   
+
+   }    
+  
+   
   .plus-populaires img {
-    width: 90%;
+    width: 150px;
     height: auto;
     border-radius: 10% 0 0 10%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10px;
+    }
+    .photoSection2 p{
+      flex-direction: row;
+    }
 
+
+    /* ************ footer******** */
+  footer{
+    display: flex;
+    background-color: silver;  
+   
+
+  }
+  footer ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-content: space-between; 
+    margin-left: 150px;
+    
+  }
+  
+
+  footer li{
+   
+    color: #000;
+     list-style: none; 
+     d  
+
+  }
+  footer a{
+    text-decoration: underline;
+    text-decoration: none;  
+    color: #000; 
+    
+
+  }
+    
+  
 
 
 
