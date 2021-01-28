@@ -1,22 +1,24 @@
+
 *, ::before, ::after {
     box-sizing: inherit;
 }
-
-
-/* body{
-  font-family: 'Raleway', sans-serif;
- display: block;
- margin: 8px;
-
+/* 
+*, ::before, ::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 } */
 
 body{
+  font-family: 'Raleway', sans-serif;
   margin: auto;
   width: 1155px;
-  height: 900px;
+  /* height: 900px; */
+  height: 100vh ;
   justify-content: center;
   align-items: center;
 }
+
 header  {
   margin-top: 30px;
   
@@ -40,7 +42,7 @@ nav li{
 }
 
 nav a{
-  text-decoration: underline;
+  
   text-decoration: none;  
   color: #0065FC;
   margin: 40px;
@@ -120,8 +122,10 @@ margin: 20px 0 20px 0;
   padding: 12px ;
   border: 3px solid #DEEBFF;
   cursor: pointer;
-  font-style: bold;
+  position: relative;
+  left: -2px;
 }
+
 
 .icon-money, .icon-child, .icon-heart, .icon-dog{
   cursor: pointer;
@@ -129,7 +133,14 @@ margin: 20px 0 20px 0;
   border: 2px solid #F2F2F2;
   padding: 0 10px 0 0 ;
   margin-left: 20px;
-  font-style: bold;
+  
+  }
+  .icon-money:hover, .icon-child:hover, .icon-heart:hover, .icon-dog:hover{
+    color: white ;
+    background-color: #0065FC;
+    font-size: 16px;
+    border: 3px solid #DEEBFF;   
+ 
   }
   
 
@@ -151,13 +162,24 @@ margin: 20px 0 20px 0;
 .section1{
    background: #F2F2F2;
    border-radius: 40px;
-   /* height: auto; */
    margin: 10px;
 }
 
-.section1 h1, p{
+.section1 h1{
   position: relative;
   left: 20px;
+  
+}
+.section1 h2 {
+  position: relative;
+  left: 20px;
+  font-size: 14px;
+}
+
+.photoSection1 a{
+  text-decoration:none;  
+  color: black;  
+  position:initial;
   
 }
 
@@ -238,11 +260,11 @@ margin: 20px 0 20px 0;
   margin: 8px 0 5px 10px;
   
 }
-.star{
+.section1 .star{
   display: flex;
-  margin: 5px;
+  margin: 15px 0 0 5px ;
   color: #0065FC;
-  font-size: 15px;
+  font-size: 15px ;
 
 }
 .starGrey{
@@ -256,11 +278,16 @@ margin: 20px 0 20px 0;
     margin: -4px 0 -9px 30px;
 }
 
+.plus-populaires a{
+  
+    text-decoration: none;  
+    color: #000; 
 
+}
 .plus-populaires{
   background: #F2F2F2;
   border-radius: 40px;
-   padding: 5px;
+   padding: 5px 20px;
    margin: 10px;  
   
   }
@@ -312,7 +339,10 @@ top: 10px;
     .photoSection2  .star{
       position: relative;
       top: 100px;
-      left: -55px;
+      left: -80px;
+      display: flex;
+      color: #0065FC;
+      font-size: 15px;
       
     }
 
@@ -360,7 +390,46 @@ box-shadow: 10px 10px 15px -13px #000000;
 }
 
  */
+
+
+.section3{
+  /* width: 100%; */
+  /* height: auto;  */
+  display: grid;
+  
+  grid-template-areas: 
+  "vieuxPort  fortPomegue  parcNCalanques   notreDame      "
+  "vieuxPort  fortPomegue  parcNCalanques   notreDame      "
+  "vieuxPort  fortPomegue  parcNCalanques   notreDame      "
+  "vieuxPort  fortPomegue  parcNCalanques   notreDame      "
+  "vieuxPort  fortPomegue  parcNCalanques   notreDame      "
+  "vieuxPort  fortPomegue  parcNCalanques   parcLongchamp  "
+  "vieuxPort  ileFrioul    parcNCalanques   parcLongchamp  "
+  "vieuxPort  ileFrioul    parcNCalanques   parcLongchamp  "
+  "vieuxPort  ileFrioul    parcNCalanques   parcLongchamp  "
+  "vieuxPort  ileFrioul    parcNCalanques   parcLongchamp  "
+
+  
+  ;
+
+    background-color: #c76c6c;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    grid-template-rows: repeat(10,1fr);
+    
+}
+.section3 a{
+  
+    text-decoration: none;  
+    color: #000; 
+
+}
+/* 
+.section3 .vieuxPort, .fortPomegue, .parcNCalanques, .notreDame, .parcLongchamp, .ileFrioul{
+margin-left: 10px;
+} */
  /* ******************conteneur  vieuxPort******* */
+ 
 .section3 .img1{
 
     width: 280px;
@@ -369,99 +438,109 @@ box-shadow: 10px 10px 15px -13px #000000;
     border-radius: 30px 30px 0 0;
 }
 .vieuxPort{
+  grid-area: vieuxPort;
   background: white;
   width: 280px;
-  height: 350px;
+  /* height: 350px; */
   border-radius : 30px; 
   box-shadow: 10px 10px 15px -13px #000000;
+  
   
 }
 
 /* ******************conteneur  fortPomegue******* */
 
-.section3{
-  display: flex;
-  
-}
+
 
 .section3 .img2 {
   width: 280px;
   height: 150px;
-  border-radius : 30px;
+  border-radius : 30px 30px 0 0;
   background: black url("images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg") no-repeat center / cover;
   
 }
+
  .fortPomegue{
+  grid-area: fortPomegue;
   background: white;
   width: 280px;
-  height: 200px;
+  /* height: 200px; */
   border-radius : 30px; 
   box-shadow: 10px 10px 15px -13px #000000;
   
 }
-
+/* ******************conteneur Îles du Frioul **********/
 .section3 .img3 {
   width: 280px;
   height: 100px;
-  border-radius : 30px;
+  border-radius : 30px 30px 0 0;
   background: black url("images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg") no-repeat center / cover;
   
 }
+
 .ileFrioul{
+  grid-area: ileFrioul ;
   background: white;
   width: 280px;
-  height: 150px;
+  /* height: 150px; */
   border-radius : 30px; 
   box-shadow: 10px 10px 15px -13px #000000;
   
 }
-
+/* ******************conteneur Parc National des Calanques **********/
 .section3 .img4{
   width: 280px;
   height: 300px;
-  border-radius : 30px;
+  border-radius : 30px 30px 0 0;
   background: black url("images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg") no-repeat center / cover;
   box-shadow: 10px 10px 15px -13px #000000;
 }
 .parcNCalanques{
+  grid-area: parcNCalanques ;
   background: white;
   width: 280px;
-  height: 350px;
+  /* height: 350px; */
   border-radius : 30px; 
   box-shadow: 10px 10px 15px -13px #000000;
   
-} 
+}
+
+/* ******************conteneur Notre Dame-de-la-Garde **********/
 .section3 .img5{
   width: 280px;
   height: 150px;
-  border-radius : 30px;
+  border-radius : 30px 30px 0 0;
   background: black url("images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg") no-repeat center / cover;
   box-shadow: 10px 10px 15px -13px #000000;
 }
 .notreDame{
+  grid-area: notreDame ;
   background: white;
   width: 280px;
-  height: 200px;
+  /* height: 200px; */
+  border-radius : 30px; 
+  box-shadow: 10px 10px 15px -13px #000000;
+  
+} 
+/* ******************conteneur Parc Longchamp **********/
+.section3 .img6{
+  width: 280px;
+  height: 150px;
+  border-radius : 30px 30px 0 0;
+  background: black url("images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg") no-repeat center / cover;
+  box-shadow: 10px 10px 15px -13px #000000;
+}
+.parcLongchamp{
+  grid-area: parcLongchamp ;
+  background: white;
+  width: 280px;
+  /* height: 200px; */
   border-radius : 30px; 
   box-shadow: 10px 10px 15px -13px #000000;
   
 } 
 
-.section3 .img6{
-  width: 280px;
-  height: 150px;
-  border-radius : 30px;
-  background: black url("images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg") no-repeat center / cover;
-  box-shadow: 10px 10px 15px -13px #000000;
-}
-.parcLongchamp{
-  background: white;
-  width: 280px;
-  height: 200px;
-  border-radius : 30px; 
-  box-shadow: 10px 10px 15px -13px #000000;
-  
-} 
+
 
 
     /* ************ footer******** */
@@ -497,13 +576,5 @@ box-shadow: 10px 10px 15px -13px #000000;
 
   }
     
-  
-
-
-
-/* explication concernant 
-display : flex;
-justify-content: center; alignement par rapport aux axe des X
-align-items: center; alignement par rapport aux axe des y 
-remarque si on applique ça sur le body il faut lui donner une hauteur car le body ne l'a pas
-height: 100vh */
+  /* ********media query  */
+  @
