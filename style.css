@@ -7,7 +7,7 @@
 }
 
 body{
-  width: 100%;
+  /* width: 100%; */
   font-family: 'Raleway', sans-serif;
   /* margin: auto;*/
   /* justify-content: center;
@@ -21,7 +21,7 @@ header  {
   
   background: #b14040;  
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   /* flex-wrap:wrap;  */
  
 }
@@ -38,6 +38,7 @@ header :nth-child(3) { order: 3; }
   padding-top: 8px;
   
   background: yellow;
+  margin-right: auto;
 }
 
 .logo img {
@@ -657,7 +658,9 @@ top: 10px;
   @media screen and (max-width: 414px){
   header  {
     
-    height: 90px;   
+    /* height: 90px;    */
+    height: auto;
+    justify-content: center;
    
     }
   header :nth-child(1) { order: 1;} 
