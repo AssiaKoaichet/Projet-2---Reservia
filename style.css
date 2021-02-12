@@ -109,6 +109,7 @@ header a:hover{
   font-weight: bold;
 
 }
+
 .inscrire {
   /* width: 30%; */
 /* margin-left: 50px; */
@@ -152,7 +153,8 @@ p{
 /***************** section recherche de l'hebergement */
 .recherche {
   left: 0px;
-  margin: 40px 0 15px 35px;
+  /* margin: 40px 0 15px 35px; */
+  margin: 40px 35px 15px 35px;
   }
 
 /* *******************boutton recherche************* */
@@ -163,6 +165,7 @@ p{
     color: white;
     left: -76px;
     visibility: hidden;
+  
   }
 
 .bouttonRecherche{
@@ -287,7 +290,8 @@ font-size: 16px;
    background: #F2F2F2;
    border-radius: 40px;
    height: auto;
-   width: 70%; 
+   /* width: 70%;  */
+   width: 100%;
    display: flex; 
    flex-direction: column; 
    justify-content:space-around;
@@ -391,7 +395,8 @@ font-size: 16px;
 
 /****************** section2 plus-populaire */
 .section2{
-  width: 30%;
+  /* width: 30%; */
+  width: 100%;
 }
 .populaire{
     
@@ -521,7 +526,7 @@ font-size: 16px;
     grid-row-gap: 50px;
     grid-template-rows: repeat(10,1fr);
     grid-template-columns: repeat(4,1fr) ;
-    justify-items: center;
+    /* justify-items: center; */
     
     
 }
@@ -714,8 +719,8 @@ font-size: 16px;
     flex-wrap: wrap;
     /* height: 90px;    */
     height: auto;
-    justify-content: start;   
-    }
+    justify-content: left; 
+  }
 
   .logo{
     height: auto;
@@ -736,7 +741,7 @@ font-size: 16px;
   }
   
   .hebergementActivite ul {
-      border-bottom:2px solid #f2f2f2; 
+      border-bottom:2px solid #a3a3a3; 
       padding: 0px 10px;
 
   }
@@ -1104,6 +1109,7 @@ font-size: 16px;
     grid-template-rows: repeat(6,1fr);
     grid-template-columns: repeat(1,1fr) ;
     padding: 0;
+    justify-items: center;
    
   }
 
