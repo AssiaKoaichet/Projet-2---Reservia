@@ -1,0 +1,392 @@
+    
+/* **********  responsive du header     ********** */
+
+    @media screen and (max-width: 470px){
+  
+    header :nth-child(1) {
+      order: 0;
+    }
+    header :nth-child(2) {
+      order: 2;
+    }
+    header :nth-child(3) {
+      order: 1;
+    }
+        
+    .hebergementActivite ul{
+      line-height: 65px;      
+    }
+    
+    .hebergementActivite li {
+      border-bottom:2px solid #a3a3a3; 
+      padding:  0px 50px 0px 50px ;
+    }
+  
+    header li:hover  { 
+      border-bottom:2px solid #0065FC;
+      border-top: 0px solid #0065FC;
+      color: #0065FC;    
+    }         
+  }
+  
+  /* **********  responsive du paragraphe et bouton de recherche     ********** */
+  
+  @media screen and (max-width: 430px){
+    .envoyer{
+      visibility: hidden;
+      display:none
+  }
+    #loupe {
+      visibility:visible;
+      left: -20px; 
+     }
+  }
+  
+  
+  /* **********  responsive des filtres     ********** */
+  @media screen and (max-width: 907px){
+    .filtres{
+      /* width: 100%; */
+      display: flex;
+      flex-direction: column;
+      align-items:flex-start;
+      margin: 20px 0 20px 20px;
+      } 
+      
+      .btFiltres{
+        
+        display: flex;
+        flex-wrap: wrap;
+        /* transform: scale(0.9); */
+        /* box-sizing:border-box ; */
+        
+      }
+      .titreFiltres{
+        /* margin-left: 20px; */
+        align-self: flex-start;
+      }
+      
+      .icon-money, .icon-child, .icon-heart, .icon-dog{
+        
+        padding: 0 50px 0 0 ;
+        margin: 5px;
+        
+        }
+      
+  
+  }
+  @media screen and (max-width: 375px){
+  
+    .filtres{
+      /* width: 100%; */
+      display: flex;
+      flex-direction: column;
+      align-items:flex-start;
+      margin: 30px 0 30px 20px;
+      } 
+      
+      .btFiltres{
+        
+        display: flex;
+        flex-wrap: wrap;
+        /* transform: scale(0.9); */
+        /* box-sizing:border-box ; */
+        
+      }
+      .titreFiltres{
+        margin-bottom: 20px;
+        align-self: flex-start;
+      }
+      
+      .icon-money, .icon-child, .icon-heart, .icon-dog{
+        
+        padding: 0 25px 0 5px ;
+        /* margin: 5px; */
+        
+      }
+        .icon-money i, .icon-child i, .icon-heart i, .icon-dog i{
+        left: -6px;
+      }
+      
+   }  
+  
+   
+  
+  /* **********  responsive de la section1 Hébergement Marseille    ********** */
+  
+  @media screen and (max-width: 980px){
+    .section1 h1, h2{
+      font-size: 16px;
+    }
+  
+    .section1 p{
+      font-size: 14px;
+    }
+  
+    .hebergement-marseille { 
+  
+      width:100% ; 
+      height: auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr ;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-gap: 20px; 
+      margin: 10px 0 10px 0px;
+      justify-items: center;
+      
+    }
+    
+    .section1{
+      width:100%;
+      margin: 0px;
+      background: white;            
+    }
+  }
+  
+  
+  @media screen and (max-width: 375px){
+  
+    .hebergement-marseille { 
+      
+      width:100% ; 
+      height: auto;
+      display: grid;
+      grid-template-columns: 1fr  ;
+      /* grid-template-columns: max-content; */
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-gap: 20px; 
+          margin: 10px 0 10px 0px;
+      justify-items: center;
+    }
+  
+    .section1{
+      width:95%;
+      /* padding: 0px 10px; */
+      background: white;
+      order: 1;
+              
+    }
+  
+    .photoSection1{   
+     padding-top:1px ; 
+     /* width: 90%; */
+     
+    } 
+    
+    }  
+  
+   
+    /* **********  responsive de la section2 les plus populaires    ********** */
+  
+   
+    
+    @media screen and (max-width: 980px){
+    .section2{
+      width:100%;
+      margin: 0;
+      padding:0;
+      align-content: center;
+    }
+  
+    .cartesec2{
+      width: 90%;
+    }
+    .photoSection2{
+  
+      width: 100%;
+      
+    }
+    
+  .plus-populaires{
+    width: 100%;
+    margin: 20px 0 20px 0;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0;
+  }
+  
+  .populaire{
+    font-size: 14px;
+    justify-content:space-between;
+    padding: 0 20px;
+  }
+  }
+  /* ******* mode tablette section2 ******* */
+  
+  @media screen and (max-width: 768px) and (min-width: 414){
+    .plus-populaires img {
+            width: 300px;
+            height: auto;
+            border-radius: 15% 0 0 15%;
+            object-fit: cover;
+        }
+    
+    }
+  /* ******* mode iphone section2 ******* */
+  @media screen and (max-width: 375px){
+  
+    .section2{
+      /* width:100%; */
+      /* margin: 0; */
+      /* padding:0; */
+      align-content: center;
+  
+    }
+    .cartesec2{
+      width: 95%;
+    }
+    .photoSection2{
+  
+      width: 100%;
+      
+    }
+    
+  .plus-populaires{
+    width: 100%;
+    margin: 20px 0 20px 0;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0;
+  }
+  
+  .populaire{
+    font-size: 14px;
+    justify-content:space-between;
+    padding: 0 20px;
+  }
+  }
+  
+  /* **********  responsive de la section qui regroupe section1 et section2    ********** */
+  
+  @media screen and (max-width: 980px ){
+    .sect1sec2{
+      width: 100%;
+      display: flex;
+      height: auto;
+      margin-top: 10px;
+      margin-bottom: 40px;
+      padding: 0 30px 0 30px;
+      flex-wrap: wrap-reverse ;
+      row-gap: 10px;
+    }
+    
+  }
+  
+  @media screen and (max-width: 375px){
+  .sect1sec2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0 0px 0 0px;
+    }
+    
+  }
+  
+   /* **********  responsive de la  section3    ********** */
+   
+   @media screen and (max-width: 880px ){
+    .section3{
+    grid-column-gap: 20px;
+    grid-row-gap: 30px;
+    grid-template-rows: repeat(10,1fr) ;
+    grid-template-columns: repeat(2,1fr) ;
+    grid-template-areas: 
+        "vieuxPort       fortPomegue   "
+        "vieuxPort       fortPomegue   "
+        "vieuxPort       fortPomegue   "
+        "vieuxPort       ileFrioul     "
+        "vieuxPort       ileFrioul     "
+        "parcNCalanques  notreDame     "
+        "parcNCalanques  notreDame     "
+        "parcNCalanques  notreDame     "
+        "parcNCalanques  parcLongchamp "
+        "parcNCalanques  parcLongchamp "
+    ;
+    }
+   }
+  
+  @media screen and (max-width: 375px){ 
+  
+  .section3{
+   
+    grid-template-areas: 
+        "vieuxPort"
+        "fortPomegue"
+        "ileFrioul"
+        "parcNCalanques"
+        "notreDame"
+        "parcLongchamp"  ;
+  
+      grid-row-gap: 20px;
+      grid-template-rows: repeat(6,1fr);
+      grid-template-columns: repeat(1,1fr) ;
+      padding: 0 10px 0 10px ;
+        
+    }
+  
+    .section3 .img1, .section3 .img3, .section3 .img4, .section3 .img5, .section3 .img6{
+      object-fit: cover;
+      object-position: 0px 0px;  
+      height: 155px; 
+      padding:0px
+    }
+     .section3 .img2{
+      object-position: 0px -150px;
+    } 
+  
+    .section3 a{
+      text-decoration: none;  
+      color: #000; 
+      /* width: 85%; */
+      height: auto;
+    }
+  }
+  
+  
+  
+  /* **********  responsive du footer    ********** */
+  @media screen and (max-width: 768px){
+    footer{
+      font-size: 12px;
+      width: 100%;
+      height: auto;
+      display: flex;
+      /* flex-wrap: wrap; */
+      align-content: center;
+      /* flex-direction: column; */
+      background-color: #F2F2F2;
+      padding: 0 20px 0 45px;     
+      }
+  
+      footer li{
+        line-height: 20px; 
+         }
+  }
+  
+  @media screen and (max-width: 375px){
+  
+  footer{
+    font-size: 12px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content:flex-start;
+    flex-direction: column;
+    background-color: #F2F2F2;
+    padding: 0 20px 0 45px;
+     
+    }
+  footer ul{
+    margin: 0;     
+    }
+  
+  footer li{
+   line-height: 30px; 
+    }
+  
+  }
