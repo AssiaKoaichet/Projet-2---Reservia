@@ -27,13 +27,16 @@ header  {
   width: 90px;
   margin-right: auto;
   align-self: flex-end;
+  padding-top: 20px;
 }
 
 .navIscrire{
   display: flex;
   align-items: flex-end;
 }
-
+.inscrire{
+  padding-top: 45px;
+}
 .hebergementActivite ul {
   display: flex;
   padding: 0 0 0 0px ;
@@ -43,7 +46,7 @@ header  {
 
 .hebergementActivite li{   
   list-style: none;    
-  padding: 20px 20px 0 20px;
+  padding: 40px 20px 0 20px;
 }
 
 nav a{  
@@ -79,7 +82,7 @@ margin: 10px 0px 10px 0;
 /* *******************boutton recherche************* */
 
 .bouttonRecherche{
-  display: flex;
+  display: inline-flex;
   margin: 0 0 0 20px;
 }
 
@@ -122,21 +125,16 @@ margin: 10px 0px 10px 0;
 }
 
 /* ***************les filtres*************** */
-
-
  .filtres{
-/* width: 90%; */
 display: flex;
 align-items: center;
 margin: 15px 0 15px 20px;
 padding:0 0 0 0;
 font-weight: bold;
 font-size: 16px;
-
 } 
 
 .btFiltres{
-  /* width: 93%; */
   display: flex;
   flex-direction: row;
 }
@@ -160,33 +158,29 @@ font-size: 16px;
   padding-right: 10px ;
 }
 
-
 .icon-money, .icon-child, .icon-heart, .icon-dog{
   cursor: pointer;
   border-radius: 50px ;
   border: 2px solid #F2F2F2;
   padding: 0 20px 0 0 ;
-  margin: 18px;
-  
+  margin: 18px;  
   }
+
   .icon-money:hover, .icon-child:hover, .icon-heart:hover, .icon-dog:hover{
     color: white ;
-    background-color: #0065FC;
-   
+    background-color: #0065FC;   
   }
   
   .icon-ifo{
     display: flex;
    flex-direction:row;
    margin: 0 0 30px 20px
-
-  }
+}
 
   .icon-ifo span{
-    font-size: 16px;
-    /* font-weight: bold; */
-    margin-left: 10px;
-  }
+ font-size: 16px;
+  margin-left: 10px;
+}
 
 .icon-ifo i{
     
@@ -202,17 +196,16 @@ font-size: 16px;
 /* ***************section1 hebergement a marseille*************** */
 
 .section1{
-   background: #F2F2F2;
-   border-radius: 40px;
-   height: auto;
-   width: 65%; 
-   margin-right: 10px;
-   /* width: 100%; */
-   display: flex; 
-   flex-direction: column; 
-   justify-content:space-around;
-   align-items: flex-start;
-  }
+  background: #F2F2F2;
+  border-radius: 40px;
+  height: auto;
+  width: 65%; 
+  margin-right: 10px;
+  display: flex; 
+  flex-direction: column; 
+  justify-content:space-around;
+  align-items: flex-start;
+}
 
 .section1 h1{
   margin:  20px 20px 0px 20px;
@@ -221,7 +214,7 @@ font-size: 16px;
 .section1 h2 {
   margin: 0px 20px 20px 20px;
   font-size: 18px;
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .photoSection1 p{
@@ -238,9 +231,7 @@ font-size: 16px;
   flex-direction: column;
   margin-left: 15px;
   justify-content: space-evenly;
-  
 }
-
 
 .photoSection1 a{
   text-decoration:none;  
@@ -281,14 +272,10 @@ font-size: 16px;
 .photoSection1 {
   background-color: white;
   border-radius: 10%;
-  /* width: 230px; */
   width: 100%;
   height: 210px;
-  /* margin: 10px; */
   padding: 0;  
-  /* box-shadow: 10px 10px 15px -13px #000000; */
-  box-shadow: 0px 0px 13px 0px rgb(0 0 0 / 14%);
- 
+  box-shadow: 0px 0px 13px 0px rgb(0 0 0 / 14%); 
 }               
 
 .fontWidthBold {
@@ -313,40 +300,33 @@ font-size: 16px;
 .section2{
   width: 35%;
 }
+
 .populaire{    
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    font-size: 20px;
+    margin-bottom: 10px;
 }
 
-.plus-populaires a{
-  
+.plus-populaires a{  
     text-decoration: none;  
     color: #000; 
-
 }
+
 .plus-populaires{
-  background: #F2F2F2;
-  border-radius: 40px;
+   background: #F2F2F2;
+   border-radius: 40px;
    padding: 5px 20px;
    margin-left: 10px;  
    height: 100%;
-   width: 100%;
-  
+   width: 100%;  
   }
-.populaire i{
-  /* position: relative;
-  left: 270px;
-  bottom: 30px; */
-
-  color: black;
-}
 
   .photoSection2 {
     background-color: white;
     border-radius: 30px;
-    /* width: 315px; */
     width: 100%;
     height: 150px;
     margin: 0 0px 20px 0 ;
@@ -354,45 +334,37 @@ font-size: 16px;
     display: inline-flex;
     box-shadow: 0px 0px 13px 0px rgb(0 0 0 / 14%); 
     object-fit: cover;
-     
-  
-    }
+  }
 
     .photoSection2 .img2{
       height: auto ;
-      /* width: 40%;       */
-      display: flex;  
-      
-     }      
-  
-   
+      display: flex; 
+     } 
+
   .plus-populaires img {
     width: 140px;
     height: auto;
     border-radius: 20% 0 0 20%;
     object-fit: cover;
-    
-    
   }
+
     .photoSection2 p{
       margin: 0;
-      /* text-align: center; */
     }
-
 
     .photoSection2  .star{
       display: flex;
       color: #0065FC;
       font-size: 12px;
-      
-      
     }
+
     .photoSection2 .carteText{
       display: flex;
       flex-direction: column;
       margin-left: 16px;
       justify-content: space-around;
     }
+
     .photoSection2 .carteText1{
       font-size: 16px;
     }
@@ -400,8 +372,6 @@ font-size: 16px;
       font-size: 14px;
       margin-top: 7px;
     }
-
-
 
     /* **********section  regroupe la section 1 et la section2 */
 
@@ -415,7 +385,6 @@ font-size: 16px;
 }
 
 /* *****************************section3 activites******** */
-
 .titreActivité{
   margin: 25px 0 25px 35px;
 }
@@ -424,42 +393,31 @@ font-size: 16px;
   width: 100%;
   height: auto; 
   display: grid;
-  /* margin-left: 5px;
-  margin-right: 5px; 
-  margin-bottom: 40px; */
   margin: 0 0px 40px 0px;
-  padding: 0 20px 0 20px ;
-  
+  padding: 0 20px 0 20px ;  
   grid-template-areas: 
-  "vieuxPort  fortPomegue  parcNCalanques   notreDame      "
-  "vieuxPort  fortPomegue  parcNCalanques   notreDame      "
-  "vieuxPort  fortPomegue  parcNCalanques   notreDame      "
-  "vieuxPort  fortPomegue  parcNCalanques   notreDame      "
-  "vieuxPort  fortPomegue  parcNCalanques   notreDame      "
-  "vieuxPort  fortPomegue  parcNCalanques   parcLongchamp  "
-  "vieuxPort  ileFrioul    parcNCalanques   parcLongchamp  "
-  "vieuxPort  ileFrioul    parcNCalanques   parcLongchamp  "
-  "vieuxPort  ileFrioul    parcNCalanques   parcLongchamp  "
-  "vieuxPort  ileFrioul    parcNCalanques   parcLongchamp  "
+      "vieuxPort  fortPomegue  parcNCalanques   notreDame      "
+      "vieuxPort  fortPomegue  parcNCalanques   notreDame      "
+      "vieuxPort  fortPomegue  parcNCalanques   notreDame      "
+      "vieuxPort  fortPomegue  parcNCalanques   notreDame      "
+      "vieuxPort  fortPomegue  parcNCalanques   notreDame      "
+      "vieuxPort  fortPomegue  parcNCalanques   parcLongchamp  "
+      "vieuxPort  ileFrioul    parcNCalanques   parcLongchamp  "
+      "vieuxPort  ileFrioul    parcNCalanques   parcLongchamp  "
+      "vieuxPort  ileFrioul    parcNCalanques   parcLongchamp  "
+      "vieuxPort  ileFrioul    parcNCalanques   parcLongchamp  "
   ;
-
-    /* background-color: #c76c6c; */
     grid-column-gap: 40px;
     grid-row-gap: 40px;
     grid-template-rows: repeat(10,1fr);
     grid-template-columns: repeat(4,1fr) ;
-    /* justify-items: center; */
-    
-    
+      
 }
 
-.section3 a{
-  
+.section3 a{  
     text-decoration: none;  
     color: #000; 
-    /* width: 95%; */
-    
-  }
+}
 
 .card-activite{
   background: white;
@@ -469,24 +427,21 @@ font-size: 16px;
   flex-direction: column;
   align-items:flex-start;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 15px;
   
 }
 
 .text-img{
   height: 55px;
   margin-left: 10px;
-   
-
 }
-
 
 /* .section3 img{
   object-position: center;
   flex-shrink: 0;
 } */
 
-/* ******************conteneur  fortPomegue******* */
+/* ******************conteneur  vieux port******* */
 .vieuxPort{
   grid-area: vieuxPort; 
 }
@@ -497,14 +452,12 @@ font-size: 16px;
   height: 200px;
   object-fit: cover;
   object-position: -150px 0px;
-  border-radius: 30px 30px 0 0;
-  
+  border-radius: 30px 30px 0 0;  
 }
 
 /* ******************conteneur  fortPomegue******* */
 .fortPomegue{
-  grid-area: fortPomegue;
-  
+  grid-area: fortPomegue;  
 }
 
 .section3 .img2 {
@@ -514,7 +467,6 @@ font-size: 16px;
   object-fit: cover;
   object-position: 0px -120px;
   border-radius: 30px 30px 0 0;
-   
 }
 
 /* ******************conteneur Îles du Frioul **********/
@@ -524,14 +476,13 @@ font-size: 16px;
   height: 80px;
   object-fit: cover;
   object-position: 0px -45px;
-  border-radius : 30px 30px 0 0;
-  
+  border-radius : 30px 30px 0 0;  
 }
 
 .ileFrioul{
-  grid-area: ileFrioul ;
-   
+  grid-area: ileFrioul ;   
   }
+
 /* ******************conteneur Parc National des Calanques **********/
 .section3 .img4{
   flex: auto;
@@ -539,13 +490,11 @@ font-size: 16px;
   height: 200px;
   object-fit: cover;
   object-position: -140px 0px;
-  border-radius : 30px 30px 0 0;
-  
+  border-radius : 30px 30px 0 0;  
 }
+
 .parcNCalanques{
-  grid-area: parcNCalanques ;
-  
-     
+  grid-area: parcNCalanques ;     
 }
 
 /* ******************conteneur Notre Dame-de-la-Garde **********/
@@ -560,7 +509,6 @@ font-size: 16px;
 
 .notreDame{
   grid-area: notreDame ;  
-  
  } 
 
 /* ******************conteneur Parc Longchamp **********/
@@ -583,7 +531,6 @@ font-size: 16px;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    align-content: center;
     background-color: #F2F2F2; 
     font-size: 16px;
     line-height: 25px;
@@ -592,22 +539,19 @@ font-size: 16px;
   footer ul {
     display: flex;
     flex-direction: column;
-     width: 100%;
+    width: 100%;
     margin-right: 150px;
     padding: 0px;
-    margin-left: 20px;
-    
+    margin-left: 20px;    
   }
+
   footer dl{
     font-weight: bold;
   }
   
-
-  footer li{
-   
+  footer li{   
     color: #000;
-     list-style: none; 
-    
+    list-style: none;     
   }
 
   footer a{
