@@ -157,7 +157,7 @@
   }
 
   /* ******* mode iphone section2 ******* */
-  @media screen and (max-width: 375px){
+  /* @media screen and (max-width: 375px){
   
     .cartesec2{
       width: 90%;
@@ -176,7 +176,8 @@
     padding: 0 20px;
   }
   }
-  
+   */
+   
   /* **********  responsive de la section qui regroupe section1 et section2    ********** */
   
   @media screen and (max-width: 980px ){
@@ -245,9 +246,8 @@
     } 
   }
   
-  
-  
-  /* **********  responsive du footer    ********** */
+    /* **********  responsive du footer    ********** */
+
   @media screen and (max-width: 1003px){
     footer ul {
       margin-right: 40px;  

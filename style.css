@@ -13,6 +13,9 @@ body{
 h1{  
   font-size: 22px; 
 }
+h2{
+  font-size: 22px; 
+}
 
 header  {  
   margin: 0 20px;
@@ -207,11 +210,11 @@ font-size: 16px;
   align-items: flex-start;
 }
 
-.section1 h1{
+.section1 h2{
   margin:  20px 20px 0px 20px;
 }
 
-.section1 h2 {
+.section1 h3 {
   margin: 0px 20px 20px 20px;
   font-size: 18px;
   font-weight: bold;
@@ -285,8 +288,7 @@ font-size: 16px;
 .photoSection1 .star{
   display: flex;
   color: #0065FC;
-  font-size: 12px ;
-  
+  font-size: 12px ;  
 }
 
 .starGrey1 :nth-child(5n) {
@@ -306,7 +308,7 @@ font-size: 16px;
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    font-size: 20px;
+    font-size: 20px; /*  la taille de l icon */
     margin-bottom: 10px;
 }
 
@@ -410,8 +412,7 @@ font-size: 16px;
     grid-column-gap: 40px;
     grid-row-gap: 40px;
     grid-template-rows: repeat(10,1fr);
-    grid-template-columns: repeat(4,1fr) ;
-      
+    grid-template-columns: repeat(4,1fr) ;      
 }
 
 .section3 a{  
@@ -545,8 +546,10 @@ font-size: 16px;
     margin-left: 20px;    
   }
 
-  footer dl{
+  footer li:first-child{
     font-weight: bold;
+    margin-bottom: 15px;
+
   }
   
   footer li{   
