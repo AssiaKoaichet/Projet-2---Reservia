@@ -1,8 +1,14 @@
     
 /* **********  responsive du header     ********** */
 
-    @media screen and (max-width: 470px){
+     @media screen and (max-width: 640px){      /*on a changer le max de 470px a  640px et on a rajouter margin: 0; */
   
+    header{
+      margin: 0;
+    }
+    nav{
+      width: 100%;
+    }
     header :nth-child(1) {
       order: 0;
     }
@@ -19,7 +25,9 @@
     
     .hebergementActivite li {
       border-bottom:2px solid #a3a3a3; 
-      padding:  0px 49px 0px 49px ;
+      padding:  0px ;
+      flex:1;
+      text-align: center;
     }
   
     header li:hover  { 
@@ -32,6 +40,11 @@
   /* **********  responsive du paragraphe et bouton de recherche     ********** */
   
   @media screen and (max-width: 430px){
+    .bouttonRecherche{
+      width:90%;
+      margin: auto;
+    }
+
     .envoyer{
       /* visibility: hidden; */
       display:none
@@ -149,12 +162,14 @@
 
   /* ******* mode tablette section2 ******* */
   
-  @media screen and (max-width: 768px) and (min-width: 414){
+  /* @media screen and (max-width: 768px) and (min-width: 414){
     .plus-populaires img {
       width: 300px;
       border-radius: 15% 0 0 15%;
     }    
-  }
+  } */
+
+
 
   /* ******* mode iphone section2 ******* */
   /* @media screen and (max-width: 375px){
@@ -237,17 +252,17 @@
   
     .section3 .img1, .section3 .img3, .section3 .img4, .section3 .img5, .section3 .img6{
       object-fit: cover;
-      object-position: 0px 0px;  
+      /* object-position: 0px 0px;   */
       height: 155px; 
       padding:0px
     }
      .section3 .img2{
-      object-position: 0px -150px;
+      /* object-position: 0px -150px; */
     } 
   }
   
     /* **********  responsive du footer    ********** */
-
+/* 
   @media screen and (max-width: 1003px){
     footer ul {
       margin-right: 40px;  
@@ -264,7 +279,7 @@
       footer li{
         line-height: 20px; 
          }
-  }
+  } */
   
   @media screen and (max-width: 375px){
   
