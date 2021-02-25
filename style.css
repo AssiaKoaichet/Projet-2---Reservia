@@ -214,7 +214,7 @@ font-size: 16px;
 }
 
 .section1 h3 {
-  margin: 0px 20px 20px 20px;
+  margin: 5px 20px 20px 20px;
   font-size: 18px;
   font-weight: bold;
 }
@@ -538,20 +538,20 @@ font-size: 16px;
     width: 100%;
     margin-left:auto;
     margin-right:auto;
+    
   }
 
   footer ul {
     display: flex;
     flex-direction: column;
     width: 90%;
-    /* margin-right: 150px; */
     padding: 0px;
     margin-left: 20px;    
   }
 
   footer li:first-child{
     font-weight: bold;
-    /* margin:15px 0; */
+    margin: 20px 0 12px 0;
 
   }
   

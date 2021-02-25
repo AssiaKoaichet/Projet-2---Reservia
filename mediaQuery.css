@@ -262,24 +262,7 @@
   }
   
     /* **********  responsive du footer    ********** */
-/* 
-  @media screen and (max-width: 1003px){
-    footer ul {
-      margin-right: 40px;  
-             
-    }
-  }
 
-  @media screen and (max-width: 768px){
-  
-      footer ul {
-        margin-right: 20px;           
-      }
-  
-      footer li{
-        line-height: 20px; 
-         }
-  } */
   
   @media screen and (max-width: 375px){
   
