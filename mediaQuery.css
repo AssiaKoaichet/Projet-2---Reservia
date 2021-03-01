@@ -58,7 +58,7 @@
   
   /* **********  responsive des filtres ********** */
  
-  @media screen and (max-width: 907px){
+  @media screen and (max-width: 995px){
     .filtres{
       flex-direction: column;
       align-items:flex-start;
