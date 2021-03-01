@@ -1,7 +1,7 @@
     
 /* **********  responsive du header     ********** */
 
-     @media screen and (max-width: 640px){      /*on a changer le max de 470px a  640px et on a rajouter margin: 0; */
+     @media screen and (max-width: 640px){ 
   
     header{
       margin: 0;
@@ -46,17 +46,18 @@
     }
 
     .envoyer{
-      /* visibility: hidden; */
+      
       display:none
   }
     #loupe {
-      visibility:visible;
+      visibility: visible;
       left: -20px; 
      }
   }
   
   
-  /* **********  responsive des filtres     ********** */
+  /* **********  responsive des filtres ********** */
+ 
   @media screen and (max-width: 907px){
     .filtres{
       flex-direction: column;
@@ -110,12 +111,11 @@
     }
   }
   
-  @media screen and (max-width: 375px){
+   @media screen and (max-width: 375px){
   
     .hebergement-marseille { 
       width:100% ; 
       grid-template-columns: 1fr  ;
-      /* grid-template-rows: 1fr 1fr 1fr; */
       grid-gap: 20px; 
       margin: 10px 0 10px 0px;
       justify-items: center;
@@ -146,52 +146,19 @@
       width: 90%;
     }
     
-  .plus-populaires{
-    margin: 20px 0 20px 0;
-    padding: 0px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 0;
-  }
-  
-  .populaire{
-    padding: 0 20px;
-  }   
-  }
-
-  /* ******* mode tablette section2 ******* */
-  
-  /* @media screen and (max-width: 768px) and (min-width: 414){
-    .plus-populaires img {
-      width: 300px;
-      border-radius: 15% 0 0 15%;
-    }    
-  } */
-
-
-
-  /* ******* mode iphone section2 ******* */
-  /* @media screen and (max-width: 375px){
-  
-    .cartesec2{
-      width: 90%;
-    }
+    .plus-populaires{
+      margin: 20px 0 20px 0;
+      padding: 0px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-radius: 0;
+      }
     
-  .plus-populaires{
-    margin: 20px 0 20px 0;
-    padding: 0px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 0;
-  }
-  
-  .populaire{
-    padding: 0 20px;
-  }
-  }
-   */
+    .populaire{
+      padding: 0 20px;
+      }   
+    }
    
   /* **********  responsive de la section qui regroupe section1 et section2    ********** */
   
@@ -252,13 +219,10 @@
   
     .section3 .img1, .section3 .img3, .section3 .img4, .section3 .img5, .section3 .img6{
       object-fit: cover;
-      /* object-position: 0px 0px;   */
       height: 155px; 
       padding:0px
     }
-     .section3 .img2{
-      /* object-position: 0px -150px; */
-    } 
+   
   }
   
     /* **********  responsive du footer    ********** */
